@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Landing.css"
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
   return (
@@ -18,7 +19,7 @@ const Landing = () => {
             <a aria-current="true" href="/" className="uppercase text-sm tracking-widest leading-none font-medium inline-block align-top hover:underline decoration-[1.5px] underline-offset-4 p-6 -mt-6 -ml-6"> About </a>
           </li>
           <li className="">
-            <a href="/shelf/" className="uppercase text-sm tracking-widest leading-none font-medium inline-block align-top hover:underline decoration-[1.5px] underline-offset-4 p-6 -mt-6 -ml-6"> Shelf </a>
+            <Link to="/shelf" className="uppercase text-sm tracking-widest leading-none font-medium inline-block align-top hover:underline decoration-[1.5px] underline-offset-4 p-6 -mt-6 -ml-6"> Shelf </Link>
           </li>
         </ul>
       </nav>
