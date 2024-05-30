@@ -1,0 +1,32 @@
+p a[target=_blank]:after {
+    content: " ↗";
+}
+
+.prose a {
+    --tw-text-opacity: 1;
+    color: rgb(242 61 0 / var(--tw-text-opacity));
+    text-decoration-line: underline;
+    text-decoration-color: #e5e5e5;
+    text-underline-offset: 4px;
+}
+
+.prose a:hover {
+    --tw-text-opacity: 1;
+    text-decoration-line: underline;
+    text-decoration-color:  rgb(242 61 0 / var(--tw-text-opacity));
+    text-underline-offset: 4px;
+}
+
+.prose p+p {
+    text-indent: 1.25rem;
+}
+
+.prose p {
+    margin: 0;
+    font-family: Lyon Text, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-size: 1rem;
+    line-height: 1.75rem;
+    line-height: 1.5;
+    --tw-text-opacity: 1;
+    color: rgb(38 38 38 / var(--tw-text-opacity));
+}
