@@ -6,15 +6,15 @@ const Shelf = () => {
     return (
         <div className="relative font-sans selection:bg-blue-100 selection:text-blue-500 bg-light-neutral dark:text-white dark:bg-black dark:selection:bg-blue-900 dark:selection:text-blue-400">
             <div className="flex lg:flex-col flex-col-reverse">
-                <nav className="sticky lg:top-0 lg:bottom-auto lg:border-t-transparent lg:border-l-transparent lg:border-r-transparent lg:border-b border border-neutral-200 lg:border-b-neutral-100 bg-white z-[51] top-auto bottom-8 mb-8 w-full lg:max-w-none max-w-[90%] mx-auto rounded-full lg:rounded-none shadow-xl shadow-black/5 lg:shadow-none dark:bg-neutral-950 dark:lg:border-b-neutral-900 dark:border-neutral-900">
-                    <div className="w-full flex lg:grid lg:grid-cols-5 items-center justify-between max-w-screen-3xl mx-auto md:px-10 min-[650px]:px-5 min-[400px]:px-3.5 xs:px-3">
-                        <div className="items-center flex-shrink-0 mr-6 hidden md:flex py-2">
+                <nav className="sticky lg:top-0 lg:bottom-auto lg:border-t-transparent lg:border-l-transparent lg:border-r-transparent lg:border-b border border-neutral-100 lg:border-b-neutral-100 bg-white z-[51] top-auto bottom-8 mb-8 w-full lg:max-w-none max-w-[90%] mx-auto rounded lg:rounded-none shadow-xl shadow-black/5 lg:shadow-none dark:bg-neutral-950 dark:lg:border-b-neutral-900 dark:border-neutral-900">
+                    <div className="w-full flex lg:grid lg:grid-cols-5  items-center justify-between max-w-screen-3xl mx-auto md:px-10 min-[650px]:px-5 min-[400px]:px-3.5 px-5 ">
+                        <div className="items-center flex-shrink-0 mr-6 md:flex py-2">
                             <div className="group/all -ml-1 cursor-pointer">
                                 <p className="text-lg font-medium group-hover/all:text-neutral-500 transition-colors relative dark:group-hover/all:text-neutral-400">
                                     <span className="group relative">M — K — U</span>
-                                    <span className="text-base font-normal text-neutral-500 group-hover/all:text-neutral-400 ml-2 transition-colors hidden xl:inline-block dark:group-hover/all:text-neutral-600">SHELF</span>
+                                    <span className="text-base font-normal text-neutral-500 group-hover/all:text-neutral-400 ml-2 transition-colors xl:inline-block dark:group-hover/all:text-neutral-600">SHELF</span>
                                     <a href="/" className=''>
-                                        <MdOutlineKeyboardBackspace className="mt-1 text-gray-400 hover:text-gray-900" style={{ fontSize: "20px", fontWeight: "1000" }} title='back' />
+                                        <MdOutlineKeyboardBackspace className="mt-1 text-gray-400 hover:text-gray-900" style={{ fontSize: "30px", fontWeight: "1000" }} title='back' />
                                     </a>
                                 </p>
                             </div>
