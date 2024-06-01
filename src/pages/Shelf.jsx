@@ -1,6 +1,53 @@
-import React from 'react'
+import React from 'react';
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { Link } from 'react-router-dom';
+
+const projects = [
+    {
+      title: "Drainage Monitoring IoT",
+      description: "Drainage Monitoring IoT App provides a dashboard to monitor smart sensors installed in gully drainage and soakaways. The dashboard displays gully locations on a map, making it easier for technicians to identify and address issues or perform maintenance. This app was built using ReactJS.",
+      imageUrl: "https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207712/UMAMPORTFOLIO/smartdrainage_gupoga.png",
+      type:"Company Project",
+      url: "https://www.gullytech.io/"
+    },
+    {
+      title: "Works Space Booking Systems",
+      description: "This app helps companies keep track of tasks and expenses for their employees. It's also a booking system for workspaces, with features to calculate carbon savings. We made versions for iOS and Android, and a dashboard for managing bookings. We also included maps and charts for data visualization. The app was built with Ionic for mobile and ReactJS for the web.",
+      imageUrl: "https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207712/UMAMPORTFOLIO/martdesk_wbcu8k.png",
+      type:"Company Project",
+      url: "#"
+    },
+    {
+      title: "Work Tasks & Payroll Planner",
+      description: "It serves as a bridge between a company and its employees, allowing monitoring of tasks and expenses via a dashboard. Additionally, it functions as an online booking platform for workspaces, offering features to calculate carbon savings. Versions for iOS and Android were developed, alongside a dashboard for managing bookings. The project was built using Ionic for mobile and ReactJS for the web.",
+      imageUrl: "https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207711/UMAMPORTFOLIO/aa_nw9eiv.png",
+      type:"Company Project",
+      url: "#"
+    },
+    {
+      title: "Mulberry & Ash",
+      description: "This website serves as both a company profile and a platform for booking consultations, built using Shopify. With its attractive design and seamless booking functionality, customers can easily schedule consultations with the company.",
+      imageUrl: "https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207713/UMAMPORTFOLIO/mulberryash_kg1cvb.png",
+      type:"Company Project",
+      url: "https://mulberryash.com/ "
+    },
+    {
+      title: "PPMTQNI",
+      description: "The school website offers online registration and an e-book reader feature, all developed using ReactJS. With its user-friendly interface, prospective students can easily apply online, while current students can access digital resources conveniently through the e-book reader.",
+      imageUrl: "https://res.cloudinary.com/dyhunlqi0/image/upload/v1716946342/UMAMPORTFOLIO/dppmtqni_etfiok.png",
+      type:"Freelance",
+      url: "https://ppmtqni-brebes.ponpes.id"
+    },
+    {
+      title: "Maestro Garden",
+      description: "A curated collection of the best products on the web.",
+      imageUrl: "https://res.cloudinary.com/dyhunlqi0/image/upload/v1716948687/UMAMPORTFOLIO/maestroo_ixlcos.png",
+      type:"Freelance",
+      url: "https://maestrogarden75plg.co.id/"
+    },
+    // Add more projects here as needed
+  ];
+  
 
 const Shelf = () => {
     return (
@@ -13,9 +60,9 @@ const Shelf = () => {
                                 <p className="text-lg font-medium group-hover/all:text-neutral-500 transition-colors relative dark:group-hover/all:text-neutral-400">
                                     <span className="group relative">M — K — U</span>
                                     <span className="text-base font-normal text-neutral-500 group-hover/all:text-neutral-400 ml-2 transition-colors xl:inline-block dark:group-hover/all:text-neutral-600">SHELF</span>
-                                    <a href="/" className=''>
+                                    <Link to="/" className=''>
                                         <MdOutlineKeyboardBackspace className="mt-1 text-gray-400 hover:text-gray-900" style={{ fontSize: "30px", fontWeight: "1000" }} title='back' />
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -38,98 +85,22 @@ const Shelf = () => {
 
                         <section className="w-full scroll-mt-24 mb-12" id="work">
                             <div className="flex flex-col gap-8 group/wrapper">
-                            <div className="w-full group/project mb-8 md:mb-0 lg:group-hover/wrapper:opacity-25 lg:hover:!opacity-100 transition-opacity">
-                                    <a className="flex md:gap-0 gap-2 flex-col lg:flex lg:flex-row items-start relative group/link" href="https://www.gullytech.io/" target='blank'>
+                            {projects.map((project, index) => (
+                                <div key={index} className="w-full group/project mb-8 md:mb-0 lg:group-hover/wrapper:opacity-25 lg:hover:!opacity-100 transition-opacity">
+                                    <a className="flex md:gap-0 gap-2 flex-col lg:flex lg:flex-row items-start relative group/link" href={project.url} target='_blank'>
                                         <div className="w-full lg:max-w-[calc((100%-432px)/2)] lg:sticky top-20 md:pr-8">
-                                            <h3 className="text-lg font-semibold transition-colors md:group-hover/link:underline underline-offset-2">Drainage Monitoring IoT</h3>
-                                            <label>Company Project —</label>
-                                            <p className="text-neutral-500 dark:text-neutral-400 mb-2 line-clamp-2">Drainage Monitoring IoT App provides a dashboard to monitor smart sensors installed in gully drainage and soakaways. The dashboard displays gully locations on a map, making it easier for technicians to identify and address issues or perform maintenance. This app was built using ReactJS.</p>
+                                            <h3 className="text-lg font-semibold transition-colors md:group-hover/link:underline underline-offset-2">{project.title}</h3>
+                                            <label>{project.type} —</label>
+                                            <p className="text-neutral-500 dark:text-neutral-400 mb-2 line-clamp-3 text-sm">{project.description}</p>
                                         </div>
                                         <div className="w-full relative">           
                                             <div className="bg-neutral-100 dark:bg-neutral-900/70 overflow-hidden lg:h-auto flex items-center justify-center w-full md:px-8">
-                                                <img className="relative md:h-auto md:object-scale-down md:object-center object-cover object-left" src="https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207712/UMAMPORTFOLIO/smartdrainage_gupoga.png" />
+                                                <img className="relative md:h-auto md:object-scale-down md:object-center object-cover object-left" src={project.imageUrl} />
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-
-                                <div className="w-full group/project mb-8 md:mb-0 lg:group-hover/wrapper:opacity-25 lg:hover:!opacity-100 transition-opacity">
-                                    <a className="flex md:gap-0 gap-2 flex-col lg:flex lg:flex-row items-start relative group/link" href="https://ppmtqni-brebes.ponpes.id" target='blank'>
-                                        <div className="w-full lg:max-w-[calc((100%-432px)/2)] lg:sticky top-20 md:pr-8">
-                                            <h3 className="text-lg font-semibold transition-colors md:group-hover/link:underline underline-offset-2">Works Space Booking Systems</h3>
-                                            <label>Company Project —</label>
-                                            <p className="text-neutral-500 dark:text-neutral-400 mb-2 line-clamp-2">This app helps companies keep track of tasks and expenses for their employees. It's also a booking system for workspaces, with features to calculate carbon savings. We made versions for iOS and Android, and a dashboard for managing bookings. We also included maps and charts for data visualization. The app was built with Ionic for mobile and ReactJS for the web.</p>
-                                        </div>
-                                        <div className="w-full relative">           
-                                            <div className="bg-neutral-100 dark:bg-neutral-900/70 overflow-hidden lg:h-auto flex items-center justify-center w-full md:px-8">
-                                                <img className="relative md:h-auto md:object-scale-down md:object-center object-cover object-left" src="https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207712/UMAMPORTFOLIO/martdesk_wbcu8k.png" />
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div className="w-full group/project mb-8 md:mb-0 lg:group-hover/wrapper:opacity-25 lg:hover:!opacity-100 transition-opacity">
-                                    <a className="flex md:gap-0 gap-2 flex-col lg:flex lg:flex-row items-start relative group/link" href="https://ppmtqni-brebes.ponpes.id" target='blank'>
-                                        <div className="w-full lg:max-w-[calc((100%-432px)/2)] lg:sticky top-20 md:pr-8">
-                                            <h3 className="text-lg font-semibold transition-colors md:group-hover/link:underline underline-offset-2">Work Tasks & Payroll Planner</h3>
-                                            <label>Company Project —</label>
-                                            <p className="text-neutral-500 dark:text-neutral-400 mb-2 line-clamp-2">It serves as a bridge between a company and its employees, allowing monitoring of tasks and expenses via a dashboard. Additionally, it functions as an online booking platform for workspaces, offering features to calculate carbon savings. Versions for iOS and Android were developed, alongside a dashboard for managing bookings. The project was built using Ionic for mobile and ReactJS for the web.</p>
-                                        </div>
-                                        <div className="w-full relative">           
-                                            <div className="bg-neutral-100 dark:bg-neutral-900/70 overflow-hidden lg:h-auto flex items-center justify-center w-full md:px-8">
-                                                <img className="relative md:h-auto md:object-scale-down md:object-center object-cover object-left" src="https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207711/UMAMPORTFOLIO/aa_nw9eiv.png" />
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div className="w-full group/project mb-8 md:mb-0 lg:group-hover/wrapper:opacity-25 lg:hover:!opacity-100 transition-opacity">
-                                    <a className="flex md:gap-0 gap-2 flex-col lg:flex lg:flex-row items-start relative group/link" href="https://mulberryash.com/" target='blank'>
-                                        <div className="w-full lg:max-w-[calc((100%-432px)/2)] lg:sticky top-20 md:pr-8">
-                                            <h3 className="text-lg font-semibold transition-colors md:group-hover/link:underline underline-offset-2">Mulberry & Ash</h3>
-                                            <label>Company Project —</label>
-                                            <p className="text-neutral-500 dark:text-neutral-400 mb-2 line-clamp-2">This website serves as both a company profile and a platform for booking consultations, built using Shopify. With its attractive design and seamless booking functionality, customers can easily schedule consultations with the company.</p>
-                                        </div>
-                                        <div className="w-full relative">           
-                                            <div className="bg-neutral-100 dark:bg-neutral-900/70 overflow-hidden lg:h-auto flex items-center justify-center w-full md:px-8">
-                                                <img className="relative md:h-auto md:object-scale-down md:object-center object-cover object-left" src="https://res.cloudinary.com/dyhunlqi0/image/upload/v1717207713/UMAMPORTFOLIO/mulberryash_kg1cvb.png" />
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-
-
-
-                                <div className="w-full group/project mb-8 md:mb-0 lg:group-hover/wrapper:opacity-25 lg:hover:!opacity-100 transition-opacity">
-                                    <a className="flex md:gap-0 gap-2 flex-col lg:flex lg:flex-row items-start relative group/link" href="https://ppmtqni-brebes.ponpes.id" target='blank'>
-                                        <div className="w-full lg:max-w-[calc((100%-432px)/2)] lg:sticky top-20 md:pr-8">
-                                            <h3 className="text-lg font-semibold transition-colors md:group-hover/link:underline underline-offset-2">PPMTQNI</h3>
-                                            <label>Freelance —</label>
-                                            <p className="text-neutral-500 dark:text-neutral-400 mb-2 line-clamp-2">The school website offers online registration and an e-book reader feature, all developed using ReactJS. With its user-friendly interface, prospective students can easily apply online, while current students can access digital resources conveniently through the e-book reader.</p>
-                                        </div>
-                                        <div className="w-full relative">           
-                                            <div className="bg-neutral-100 dark:bg-neutral-900/70 overflow-hidden lg:h-auto flex items-center justify-center w-full md:px-8">
-                                                <img className="relative md:h-auto md:object-scale-down md:object-center object-cover object-left" src="https://res.cloudinary.com/dyhunlqi0/image/upload/v1716946342/UMAMPORTFOLIO/dppmtqni_etfiok.png" />
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className="w-full group/project mb-8 md:mb-0 lg:group-hover/wrapper:opacity-25 lg:hover:!opacity-100 transition-opacity">
-                                    <a className="flex md:gap-0 gap-2 flex-col lg:flex lg:flex-row items-start relative group/link" href="https://maestrogarden75plg.co.id/" target='blank'>
-                                        <div className="w-full lg:max-w-[calc((100%-432px)/2)] lg:sticky top-20 md:pr-8">
-                                            <h3 className="text-lg font-semibold transition-colors md:group-hover/link:underline underline-offset-2">Maestro Garden</h3>
-                                            <label>Freelance —</label>
-                                            <p className="text-neutral-500 dark:text-neutral-400 mb-2 line-clamp-2">A curated collection of the best products on the web.</p>
-                                        </div>
-                                        <div className="w-full relative">
-                                            <div className="bg-neutral-100 dark:bg-neutral-900/70 overflow-hidden lg:h-auto flex items-center justify-center w-full md:px-8">
-                                                <img className="relative md:h-auto md:object-scale-down md:object-center object-contain object-left" src="https://res.cloudinary.com/dyhunlqi0/image/upload/v1716948687/UMAMPORTFOLIO/maestroo_ixlcos.png" alt="maestro" />
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            
+                            ))}
                             </div>
                         </section>
                     </div>
@@ -139,4 +110,4 @@ const Shelf = () => {
     )
 }
 
-export default Shelf
+export default Shelf;
