@@ -40,7 +40,7 @@ const projects = [
     },
     {
       title: "Maestro Garden",
-      description: "A curated collection of the best products on the web.",
+      description: "Company profiles that offer informative and detailed descriptions of various products make it easier for buyers to explore catalogs and make informed decisions based on their needs.",
       imageUrl: "https://res.cloudinary.com/dyhunlqi0/image/upload/v1716948687/UMAMPORTFOLIO/maestroo_ixlcos.png",
       type:"Freelance",
       url: "https://maestrogarden75plg.co.id/"

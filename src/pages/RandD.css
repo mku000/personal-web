@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+.code {
+    font-family: "Noto Sans Mono", monospace;
+    color: gray;
+}
+
+@media (max-width: 700px) {
+    .side-margin {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}

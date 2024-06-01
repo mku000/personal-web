@@ -24,7 +24,7 @@ const Landing = () => {
           </li>
 
           <li className="">
-            <Link to="/shelf" className="uppercase text-sm tracking-widest leading-none font-medium inline-block align-top hover:underline decoration-[1.5px] underline-offset-4 p-6 -mt-6 -ml-6"> R&D </Link>
+            <Link to="/rnd" className="uppercase text-sm tracking-widest leading-none font-medium inline-block align-top hover:underline decoration-[1.5px] underline-offset-4 p-6 -mt-6 -ml-6"> R&D </Link>
           </li>
         </ul>
       </nav>
