@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const DetailRnD = () => {
   return (
     <div className='p-5' style={{ maxWidth: "40rem" }}>
-          <div className="front-text side-margin" style={{ display: 'flex', marginBottom: '16px', alignItems: 'center', fontSize: '12px' }}>
-    <Link to="/rnd" className="hover:underline">
-      BACK
-    </Link>
-    </div>
+      <div className="front-text side-margin" style={{ display: 'flex', marginBottom: '16px', alignItems: 'center', fontSize: '12px' }}>
+        <Link to="/rnd" className="hover:underline">
+          BACK
+        </Link>
+      </div>
       <div style={{ display: 'flex', fontWeight: 700, color: 'black', fontSize: '12px' }}>
         Background :
       </div>
@@ -51,15 +51,15 @@ const DetailRnD = () => {
 
       <div className="front-text side-margin mt-5 gap-2" style={{ display: 'flex', marginBottom: '16px', alignItems: 'center', fontSize: '14px' }}>
         <label>   mku000 /</label>
-    <Link to="https://github.com/mku000/teachers-pocket" target='_blank' className="hover:underline">
-        <b>
+        <Link to="https://github.com/mku000/teachers-pocket" target='_blank' className="hover:underline">
+          <b>
 
-  teachers-pocket
-        </b>
-    </Link>
+            teachers-pocket
+          </b>
+        </Link>
 
-    <IoGitBranchOutline style={{fontSize:"16px"}} />    
-    </div>
+        <IoGitBranchOutline style={{ fontSize: "16px" }} />
+      </div>
     </div>
   )
 }

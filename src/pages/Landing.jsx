@@ -37,15 +37,14 @@ const Landing = () => {
         <h2 className="text-2xl font-medium">Hai!</h2>
         <section className="prose mt-3">
           <p>
-            I’m Muhammad Khaerul Umam, a software developer from Tegal, Indonesia, living in Semarang,
+            I’m Muhammad Khaerul Umam, a fullstack developer from Indonesia, living in Brebes,
             Central Java.
           </p>
           <p>
-            Today as a frontend developer at <a href="https://alcott-smg.com" title="Alcott SMG" target="_blank" >Alcott SMG</a>
-, I often engage with data visualization, including maps and charts. Today, I'm immersed in designing interfaces where we're revolutionizing how data is presented on the web. Here, I've been deeply involved in crafting visually compelling data representations, from interactive charts and graphs on our website to immersive data-driven experiences across various platforms. My work encompasses not only creating intuitive user interfaces but also optimizing performance and ensuring seamless integration with backend data systems.
+            Today as a fullstack developer at <a href="https://ptsumber.com/" title="PT. Sumber Masanda Jaya" target="_blank" >PT. Sumber Masanda Jaya</a>
           </p>
           <p>
-          With 2 years of experience in <a href="https://react.dev/" title="ReactJS" target="_blank" >ReactJS</a> and <a href="https://ionicframework.com/" title="Ionic Framework" target="_blank" >Ionic Framework</a> under my belt, I am currently delving into Next.js and Node.js to further my expertise in crafting innovative APIs. I am deeply passionate about learning while working and committed to staying abreast of the latest technological advancements.
+          With 3 years of experience in <a href="https://react.dev/" title="ReactJS" target="_blank" >ReactJS</a> and <a href="https://ionicframework.com/" title="Ionic Framework" target="_blank" >Ionic Framework</a> under my belt, I am currently delving into Next.js and Node.js to further my expertise in crafting innovative APIs. I am deeply passionate about learning while working and committed to staying abreast of the latest technological advancements.
           </p>
         </section>
         <section className="prose mt-6"> 
@@ -58,6 +57,20 @@ const Landing = () => {
         </section>
       </main>
       <aside className="flex flex-col gap-8 mt-8 md:mt-0 md:col-span-4 md:col-start-9">
+      <div className="">
+          <h2 className="text-2xl font-medium lg:mb-3"> PT. Sumber Masanda Jaya </h2>
+          <ul>
+            <li className="flex gap-3 items-center tabular-nums justify-between">
+              <div className="flex flex-1">
+                <hr className="bt-1 border-neutral-300 dark:border-neutral-700 basis-5/12" />
+              </div>
+              <div> Present </div>
+            </li>
+          
+            <li className="flex gap-3 items-center tabular-nums justify-between"> Fullstack Developer <hr className="bt-1 border-neutral-300 dark:border-neutral-700 flex-1" /> 2024 </li>
+          </ul>
+        </div>
+
         <div className="">
           <h2 className="text-2xl font-medium lg:mb-3"> Alcott SMG </h2>
           <ul>
@@ -65,7 +78,7 @@ const Landing = () => {
               <div className="flex flex-1">
                 <hr className="bt-1 border-neutral-300 dark:border-neutral-700 basis-5/12" />
               </div>
-              <div> Present </div>
+              <div> 2024 </div>
             </li>
             <li className="flex gap-3 items-center tabular-nums justify-between">
               <div className="flex flex-1">
@@ -74,11 +87,11 @@ const Landing = () => {
               <div> 2023 </div>
             </li>
           
-            <li className="flex gap-3 items-center tabular-nums justify-between"> FrontEnd Developer <hr className="bt-1 border-neutral-300 dark:border-neutral-700 flex-1" /> 2022 </li>
+            <li className="flex gap-3 items-center tabular-nums justify-between"> FrontEnd Web Developer <hr className="bt-1 border-neutral-300 dark:border-neutral-700 flex-1" /> 2022 </li>
           </ul>
         </div>
         <div className="">
-          <h2 className="text-2xl font-medium lg:mb-3"> Freelancer </h2>
+          <h2 className="text-2xl font-medium lg:mb-3"> Freelancer Website </h2>
           <ul>
             <li className="flex gap-3 items-center tabular-nums justify-between">
               <div className="flex flex-1">
