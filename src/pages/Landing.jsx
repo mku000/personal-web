@@ -11,7 +11,7 @@ const Landing = () => {
     
       <div>
         <a id="logo" href="/" title="About" className="font-serif text-4xl leading-[1.1em] text-right [writing-mode:vertical-rl] rotate-180" data-astro-transition-persist="astro-n5gwkkpg-2">
-          <h1>Muhammad<br />Khaerul</h1>
+          <h1>Muhammad<br />Khaerul </h1>
         </a>
       </div>
       <nav className="col-span-2">
