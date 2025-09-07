@@ -10,3 +10,10 @@ html{
   right: 0px !important;
   }
 
+
+  /* kalau user pilih dark mode di OS */
+@media (prefers-color-scheme: dark) {
+p{
+  color: whitesmoke !important;
+}
+}
