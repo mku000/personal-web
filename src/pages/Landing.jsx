@@ -53,7 +53,7 @@ const Landing = () => {
            Have a good one.
           </p>  
 
-          <span className="font-medium"> — Umam — </span>
+          {/* <span className="font-medium"> — Umam — </span> */}
         </section>
       </main>
       <aside className="flex flex-col gap-8 mt-8 md:mt-0 md:col-span-4 md:col-start-9">
@@ -125,7 +125,7 @@ const Landing = () => {
 </p>
   <p className='flex items-center gap-2 my-1'>
     <MdMail/>
-  <a href="mailto:muhammed.khaerul.umam@gmail.com"  target="_blank" title='Send Email'>muhammed.khaerul.umam@gmail.com</a>    Semarang, Central Java.   
+  <a href="mailto:muhammed.khaerul.umam@gmail.com"  target="_blank" title='Send Email'>muhammed.khaerul.umam@gmail.com</a>    Brebes, Central Java.   
     </p>
 
       <p>
